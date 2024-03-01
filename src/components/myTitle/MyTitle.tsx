@@ -1,8 +1,14 @@
 function MyTitle() {
   return (
-    <section>
+    <section style={{ height: "100vh" }}>
       <article>
-        <h2>Daniel Sánchez</h2>
+        <h2
+          style={{
+            margin: "0",
+          }}
+        >
+          Daniel Sánchez
+        </h2>
         <h2>Frontend Developer</h2>
       </article>
       <article>

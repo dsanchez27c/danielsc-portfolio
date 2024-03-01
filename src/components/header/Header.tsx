@@ -1,33 +1,34 @@
-import { useState } from "react";
 import "./../../styles/components/header/HeaderStyle.css";
 import { Icons } from "../icons/Icons";
 
 function Header() {
   const VAR_ITEMS: string[] = ["Intro", "Experience", "About", "Technologies"];
 
-  const [open, setOpen] = useState<boolean>(true);
+  document.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
 
-  const openText: string = open ? "Close" : "Open";
-
-  const handleSidebar = open ? "header-article-show" : "header-article-hide";
-
-  function OnOpenSidebar() {
-    setOpen(!open);
-  }
+    if (window.scrollY > 30) {
+      header?.classList.add("header-container-scrolled");
+    } else {
+      header?.classList.remove("header-container-scrolled");
+    }
+  });
 
   return (
     <header className="header-container">
-      <article className="open-sidebar-container">
-        <button
+      <article className="header-article">
+        <section className="open-sidebar-container">
+          <h3>
+            <em>Frontend Dev</em>
+          </h3>
+          {/* <button
           className="open-sidebat-btn"
           type="button"
-          onClick={() => OnOpenSidebar()}
         >
           {openText}
-        </button>
-      </article>
+        </button>*/}
+        </section>
 
-      <article className={`header-article ${handleSidebar}`}>
         <section className="header-nav">
           <nav className="nav-bar">
             <ul className="nav-bar-list">
@@ -41,7 +42,7 @@ function Header() {
             </ul>
           </nav>
         </section>
-
+        {/* 
         <article className="header-social-media">
           <section className="social-media-container">
             <button className="social-media-btn">
@@ -59,7 +60,17 @@ function Header() {
               </a>
             </button>
           </section>
-        </article>
+        </article> */}
+        <section className="header-change-light-btn">
+          <button className="change-light-btn">
+            <span>
+              <Icons name="sun" size="14" color="yellow" />
+            </span>
+            <span>
+              <Icons name="moon" size="14" color="blue" />
+            </span>
+          </button>
+        </section>
       </article>
     </header>
   );
