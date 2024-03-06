@@ -1,5 +1,5 @@
-import "./../../styles/components/header/HeaderStyle.css";
-import { Icons } from "../icons/Icons";
+import "src/styles/components/header/HeaderStyle.css";
+import { Icons } from "src/components/icons/Icons";
 
 function Header() {
   const VAR_ITEMS: string[] = ["Intro", "Experience", "About", "Technologies"];
@@ -36,6 +36,7 @@ function Header() {
                 return (
                   <li key={item} className="nav-bar-item">
                     {item}
+                    <span className="hover-list-line"></span>
                   </li>
                 );
               })}

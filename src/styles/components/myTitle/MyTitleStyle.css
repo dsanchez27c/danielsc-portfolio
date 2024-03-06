@@ -1,0 +1,65 @@
+.my-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 94vh;
+}
+
+.my-title-main .title-container {
+  margin: auto;
+  max-width: 50rem;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.my-title-main .title-container .user-basic-info h2 .name-dev {
+  font-size: 3.3rem;
+}
+
+.my-title-main .title-container .user-basic-info h2 .job-dev {
+  font-size: 1.4rem;
+}
+
+.my-title-main .title-container .user-basic-info h2,
+p {
+  margin: 0 0 2rem 0;
+  line-height: 1.7;
+  width: fit-content;
+}
+
+.my-title-main .title-container .user-basic-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .my-title-main .title-container .user-basic-info .download-cv-btn {
+  text-align: center;
+} */
+
+.my-title-main .title-container .user-basic-info .download-cv-btn button {
+  border: none;
+  outline: 1px solid white;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0.6rem 0;
+}
+
+.my-title-main .title-container .user-basic-info .download-cv-btn button a {
+  border-radius: 15px;
+  padding: 0.4rem 1rem;
+  display: block;
+
+  user-select: none;
+  color: white;
+}
+
+.my-title-main .title-container .user-img img {
+  height: 400px;
+  /* width: 120px; */
+
+  border-radius: 25px;
+}
