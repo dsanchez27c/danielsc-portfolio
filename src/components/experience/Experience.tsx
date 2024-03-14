@@ -1,5 +1,9 @@
 function Experience() {
-  return <section>Experience</section>;
+  return (
+    <section id="experience" className="section" style={{ height: "100vh" }}>
+      Experience
+    </section>
+  );
 }
 
 export default Experience;

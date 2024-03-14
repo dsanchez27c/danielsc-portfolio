@@ -1,7 +1,8 @@
+import "src/styles/components/content/contentStyle.css";
+
 import Experience from "src/components/experience/Experience";
 import MyTitle from "src/components/myTitle/MyTitle";
 import Projects from "src/components/projects/Projects";
-import "src/styles/components/content/contentStyle.css";
 
 function Content() {
   return (

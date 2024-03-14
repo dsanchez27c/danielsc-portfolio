@@ -1,8 +1,13 @@
 import "src/styles/components/header/HeaderStyle.css";
-import { Icons } from "src/components/icons/Icons";
+import ToggleBtn from "../toggle/ToggleBtn";
 
 function Header() {
-  const VAR_ITEMS: string[] = ["Intro", "Experience", "About", "Technologies"];
+  const VAR_ITEMS: string[] = [
+    "Intro",
+    "Experience",
+    "Projects",
+    "Technologies",
+  ];
 
   document.addEventListener("scroll", () => {
     const header = document.querySelector("header");
@@ -35,7 +40,9 @@ function Header() {
               {VAR_ITEMS.map((item: string) => {
                 return (
                   <li key={item} className="nav-bar-item">
-                    {item}
+                    <a className="nav-link" href={`#${item.toLowerCase()}`}>
+                      {item}
+                    </a>
                     <span className="hover-list-line"></span>
                   </li>
                 );
@@ -46,31 +53,11 @@ function Header() {
         {/* 
         <article className="header-social-media">
           <section className="social-media-container">
-            <button className="social-media-btn">
-              <a
-                href="https://www.linkedin.com/in/daniel-sanchez-147552219/"
-                target="_blank"
-              >
-                <Icons name="linkedin" size="44" />
-              </a>
-            </button>
 
-            <button className="social-media-btn">
-              <a href="#" target="_blank">
-                <Icons name="github" size="44" />
-              </a>
-            </button>
           </section>
         </article> */}
         <section className="header-change-light-btn">
-          <button className="change-light-btn">
-            <span>
-              <Icons name="sun" size="14" color="yellow" />
-            </span>
-            <span>
-              <Icons name="moon" size="14" color="blue" />
-            </span>
-          </button>
+          <ToggleBtn />
         </section>
       </article>
     </header>

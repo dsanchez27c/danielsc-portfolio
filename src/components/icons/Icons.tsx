@@ -1,11 +1,11 @@
 const getIconName = ({
+  color,
   name,
   size,
-  color,
 }: {
+  color: string;
   name: string;
   size: string;
-  color: string;
 }) => {
   switch (name) {
     case "github":
@@ -14,6 +14,7 @@ const getIconName = ({
           aria-hidden="true"
           viewBox="0 0 16 16"
           version="1.1"
+          fill={color}
           width={size}
           height={size}
           data-view-component="true"
@@ -28,7 +29,7 @@ const getIconName = ({
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           data-supported-dps="24x24"
-          fill="currentColor"
+          fill={color}
           width={size}
           height={size}
           focusable="false"
@@ -69,13 +70,13 @@ const getIconName = ({
 };
 
 const Icons = ({
+  color,
   name,
   size,
-  color,
 }: {
+  color: string;
   name: string;
   size: string;
-  color: string;
 }) => {
   const iconName: any = getIconName({ name, size, color });
   return iconName;
