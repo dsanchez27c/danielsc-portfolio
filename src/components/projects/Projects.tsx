@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <section id="projects" className="section" style={{ height: "100vh" }}>
+    <section id="projects" style={{ height: "100vh" }}>
       Projects
     </section>
   );

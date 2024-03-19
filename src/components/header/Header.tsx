@@ -1,5 +1,6 @@
 import "src/styles/components/header/HeaderStyle.css";
-import ToggleBtn from "../toggle/ToggleBtn";
+// import ToggleBtn from "../toggle/ToggleBtn";
+import { Icons } from "../icons/Icons";
 
 function Header() {
   const VAR_ITEMS: string[] = [
@@ -26,12 +27,6 @@ function Header() {
           <h3>
             <em>Frontend Dev</em>
           </h3>
-          {/* <button
-          className="open-sidebat-btn"
-          type="button"
-        >
-          {openText}
-        </button>*/}
         </section>
 
         <section className="header-nav">
@@ -49,6 +44,9 @@ function Header() {
               })}
             </ul>
           </nav>
+          <span className="dark-light-mode">
+            <Icons name="sun" color="yellow" size="24" />
+          </span>
         </section>
         {/* 
         <article className="header-social-media">
@@ -56,9 +54,9 @@ function Header() {
 
           </section>
         </article> */}
-        <section className="header-change-light-btn">
+        {/* <section className="header-change-light-btn">
           <ToggleBtn />
-        </section>
+        </section> */}
       </article>
     </header>
   );

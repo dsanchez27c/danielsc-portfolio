@@ -6,7 +6,7 @@ import Header from "src/components/header/Header";
 
 function App() {
   return (
-    <section id="intro" className="section app-main">
+    <section id="intro" className="app-main">
       <Header />
       <Content />
       <Footer />

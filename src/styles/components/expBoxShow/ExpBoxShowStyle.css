@@ -1,0 +1,53 @@
+.experience-container {
+  border-left: 1px solid #ffffff52;
+  padding: 0rem 0rem 0rem 1.6rem;
+}
+
+.experience-container:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+.experience-container p,
+h2 {
+  margin: 0;
+}
+
+.experience-container .date-info-container {
+  position: relative;
+}
+
+.experience-container .date-info-container .icon-container {
+  position: absolute;
+  top: 50%;
+  left: -1.6rem;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  background-color: #ffffff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.experience-container .date-info-container .date-info {
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.experience-container .experience-title {
+  display: flex;
+  align-items: center;
+}
+
+.experience-container .experience-title .experience-status {
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: #ffffff83;
+  color: #000000;
+
+  margin-left: 1rem;
+
+  padding: 0.1rem 0.7rem;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+}

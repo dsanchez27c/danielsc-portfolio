@@ -1,0 +1,27 @@
+.experience-box-main {
+  display: flex;
+}
+
+.experience-box-main .experience-box-container {
+  margin: 5% auto;
+  max-width: 50rem;
+}
+
+.experience-box-main .experience-box-container .experience-box-section-title {
+  margin-bottom: 2rem;
+  padding-left: 1.6rem;
+
+  position: relative;
+}
+
+.experience-box-main
+  .experience-box-container
+  .experience-box-section-title
+  .experience-box-icon-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+}
