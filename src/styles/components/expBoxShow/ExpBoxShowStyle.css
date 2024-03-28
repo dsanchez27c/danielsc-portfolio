@@ -1,10 +1,5 @@
 .experience-container {
-  border-left: 1px solid #ffffff52;
-  padding: 0rem 0rem 0rem 1.6rem;
-}
-
-.experience-container:not(:last-child) {
-  padding-bottom: 2rem;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .experience-container p,
@@ -12,34 +7,41 @@ h2 {
   margin: 0;
 }
 
-.experience-container .date-info-container {
+.experience-container .title-info-container {
   position: relative;
 }
 
-.experience-container .date-info-container .icon-container {
+.experience-container .title-info-container .icon-container {
   position: absolute;
   top: 50%;
-  left: -1.6rem;
+  left: 0rem;
   transform: translate(-50%, -50%);
 
   display: block;
-  background-color: #ffffff;
-  width: 15px;
-  height: 15px;
+  background-color: #ffffff61;
+  padding: 0;
   border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  padding: 0.4rem;
+  padding-left: 0.45rem;
 }
 
-.experience-container .date-info-container .date-info {
+.experience-container .title-info-container .date-info {
   line-height: 1;
   margin-bottom: 1rem;
 }
 
-.experience-container .experience-title {
+.experience-container .title-info-container .experience-title {
   display: flex;
   align-items: center;
+  padding-left: 1.7rem;
 }
 
-.experience-container .experience-title .experience-status {
+.experience-container
+  .title-info-container
+  .experience-title
+  .experience-status {
   font-size: 0.8rem;
   font-weight: 700;
   background-color: #ffffff83;
@@ -50,4 +52,14 @@ h2 {
   padding: 0.1rem 0.7rem;
   border: 1px solid #ffffff;
   border-radius: 25px;
+}
+
+.experience-info {
+  border-left: 1px solid #ffffff52;
+  padding-left: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+.experience-info .date-info {
+  color: #ffffff96;
 }

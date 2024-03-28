@@ -3,11 +3,11 @@
   justify-content: center;
   align-items: center;
 
-  min-height: 95vh;
+  /* min-height: 95vh; */
 }
 
 .my-title-main .title-container {
-  margin: auto;
+  margin: 10% auto 2%;
   max-width: 50rem;
 
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 .my-title-main .title-container .user-basic-info .name-dev {
-  font-size: 3.3rem;
+  font-size: 3rem;
   margin: 0;
 }
 

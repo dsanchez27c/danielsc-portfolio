@@ -4,7 +4,7 @@
 
 .experience-box-main .experience-box-container {
   margin: 5% auto;
-  max-width: 50rem;
+  max-width: 48rem;
 }
 
 .experience-box-main .experience-box-container .experience-box-section-title {
@@ -22,6 +22,6 @@
   top: 50%;
   left: 0;
   transform: translate(-50%, -50%);
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
 }

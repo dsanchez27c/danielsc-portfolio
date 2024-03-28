@@ -4,6 +4,6 @@ export interface ExperiencesInt {
   startDate: string;
   endDate?: string;
   status: string | boolean;
-  charge: string;
+  charge?: string;
   description: string;
 }

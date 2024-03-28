@@ -1,7 +1,8 @@
-import { Experiences } from "src/variables/Variables";
 import ExpBoxShow from "src/components/expBoxShow/ExpBoxShow";
-import "src/styles/components/experience/ExperienceStyle.css";
+import { Experiences } from "src/variables/Variables";
 import { Icons } from "../icons/Icons";
+
+import "src/styles/components/experience/ExperienceStyle.css";
 
 function Experience() {
   return (
@@ -9,13 +10,12 @@ function Experience() {
       <div className="experience-box-container">
         <h2 className="experience-box-section-title">
           <span className="experience-box-icon-container">
-            <Icons name="suitcase" color="#ffffff" size="26" />
+            <Icons name="suitcase" color="#ffffff" size="24" />
           </span>
           Experiencia Laboral
         </h2>
         {Experiences.map((experience) => {
-          const { title, startDate, endDate, description, charge, status } =
-            experience;
+          const { title, startDate, endDate, description, status } = experience;
           return (
             <ExpBoxShow
               key={title}
@@ -23,7 +23,7 @@ function Experience() {
               startDate={startDate}
               endDate={endDate}
               description={description}
-              charge={charge}
+              // charge={charge}
               status={status}
             />
           );
