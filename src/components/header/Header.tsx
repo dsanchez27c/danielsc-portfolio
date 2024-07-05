@@ -3,12 +3,7 @@ import 'src/styles/components/header/HeaderStyle.css';
 // import { Icons } from "../icons/Icons";
 
 function Header() {
-	const VAR_ITEMS: string[] = [
-		'Intro',
-		'Experiencia',
-		'Proyectos',
-		'Tecnologías',
-	];
+	const VAR_ITEMS: string[] = ['Intro', 'Experiencia', 'Proyectos'];
 
 	document.addEventListener('scroll', () => {
 		const header = document.querySelector('header');
