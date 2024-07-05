@@ -1,7 +1,22 @@
+import { ProjectList } from "src/variables/Variables";
+import ProjectBox from "../projectBox/ProjectBox";
+
 function Projects() {
   return (
-    <section id="projects" style={{ height: "100vh" }}>
-      Projects
+    <section id="projects">
+      {ProjectList.map(({ title, description, link, github, image, tags }) => {
+        return (
+          <ProjectBox
+            key={title}
+            title={title}
+            description={description}
+            link={link}
+            github={github}
+            image={image}
+            tags={tags}
+          />
+        );
+      })}
     </section>
   );
 }

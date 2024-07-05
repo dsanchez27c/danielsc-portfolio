@@ -23,7 +23,6 @@ function Experience() {
               startDate={startDate}
               endDate={endDate}
               description={description}
-              // charge={charge}
               status={status}
             />
           );

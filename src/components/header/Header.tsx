@@ -1,6 +1,6 @@
 import "src/styles/components/header/HeaderStyle.css";
 // import ToggleBtn from "../toggle/ToggleBtn";
-import { Icons } from "../icons/Icons";
+// import { Icons } from "../icons/Icons";
 
 function Header() {
   const VAR_ITEMS: string[] = [
@@ -44,9 +44,9 @@ function Header() {
               })}
             </ul>
           </nav>
-          <span className="dark-light-mode">
+          {/* <span className="dark-light-mode">
             <Icons name="sun" color="yellow" size="24" />
-          </span>
+          </span> */}
         </section>
         {/* 
         <article className="header-social-media">

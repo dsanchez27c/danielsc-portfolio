@@ -4,7 +4,6 @@ import UserImage from "src/assets/user-img.webp";
 import Experience from "src/components/experience/Experience";
 import MyTitle from "src/components/myTitle/MyTitle";
 import Projects from "src/components/projects/Projects";
-import { Icons } from "../icons/Icons";
 
 function Content() {
   return (

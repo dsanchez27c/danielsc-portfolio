@@ -7,3 +7,12 @@ export interface ExperiencesInt {
   charge?: string;
   description: string;
 }
+
+export interface ProjectsInt {
+  title: string;
+  description: string;
+  link: string;
+  github: string;
+  image: string;
+  tags: string[];
+}

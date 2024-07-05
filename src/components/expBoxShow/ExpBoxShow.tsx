@@ -7,14 +7,13 @@ function ExpBoxShow({
   startDate,
   endDate,
   description,
-  // charge,
   status,
 }: ExperiencesInt) {
   return (
     <article className="experience-container">
       <div className="title-info-container">
         <span className="icon-container">
-          <Icons name="calendar" color="#ffffff" size="14" />
+          <Icons name="calendar" color="#ffffff" size="13" />
         </span>
         <h2 className="experience-title">
           {title} <span className="experience-status">{status}</span>
@@ -24,7 +23,6 @@ function ExpBoxShow({
         <p className="date-info">
           {startDate} - {endDate}
         </p>
-        {/* <h4 className="experience-charge">{charge}</h4> */}
         <p className="experience-description">{description}</p>
       </div>
     </article>

@@ -2,12 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* min-height: 95vh; */
 }
 
 .my-title-main .title-container {
-  margin: 10% auto 2%;
+  margin: 10% auto 6%;
   max-width: 50rem;
 
   display: flex;
@@ -138,7 +136,8 @@
   transition: all 0.2s ease-out;
 }
 
-.my-title-main .title-container .user-img img {
-  height: 400px;
+.my-title-main .title-container .user-img .img-unit {
+  height: 300px;
+  width: 220px;
   border-radius: 25px;
 }

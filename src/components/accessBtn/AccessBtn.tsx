@@ -18,8 +18,8 @@ function AccessBtn({
   textBtn,
 }: AccesBtnType) {
   return (
-    <button className={classBtn}>
-      <a href={href} target="_blank">
+    <button aria-label={nameIcon} className={classBtn}>
+      <a href={href} aria-label={nameIcon} target="_blank">
         {nameIcon && colorIcon && sizeIcon && (
           <Icons name={nameIcon} size={sizeIcon} color={colorIcon} />
         )}

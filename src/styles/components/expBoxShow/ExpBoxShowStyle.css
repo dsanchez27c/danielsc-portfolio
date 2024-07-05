@@ -17,25 +17,21 @@ h2 {
   left: 0rem;
   transform: translate(-50%, -50%);
 
-  display: block;
-  background-color: #ffffff61;
-  padding: 0;
-  border-radius: 50%;
-  height: 15px;
-  width: 15px;
-  padding: 0.4rem;
-  padding-left: 0.45rem;
-}
+  display: flex;
+  place-content: center;
 
-.experience-container .title-info-container .date-info {
-  line-height: 1;
-  margin-bottom: 1rem;
+  background-color: #ffffff61;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  padding: 0.4rem;
 }
 
 .experience-container .title-info-container .experience-title {
   display: flex;
   align-items: center;
   padding-left: 1.7rem;
+  margin-bottom: 1rem;
 }
 
 .experience-container
@@ -62,4 +58,9 @@ h2 {
 
 .experience-info .date-info {
   color: #ffffff96;
+  margin-bottom: 1rem;
+}
+
+.experience-info .experience-description {
+  text-wrap: pretty;
 }

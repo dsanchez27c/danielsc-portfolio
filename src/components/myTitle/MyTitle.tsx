@@ -59,7 +59,12 @@ function MyTitle({ name, intro, openToWork, image }: MyTitleInterface) {
         </section>
 
         <article className="user-img">
-          <img src={image} alt="" />
+          <img
+            className="img-unit"
+            src={image}
+            alt="normal user image"
+            title="Normal User Image"
+          />
         </article>
       </section>
     </section>
