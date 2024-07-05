@@ -1,0 +1,84 @@
+footer {
+	width: 100%;
+	padding: 1.4rem 0 0.6rem;
+	background-color: #051a37;
+
+	display: flex;
+	flex-direction: column;
+}
+
+footer article {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0 auto;
+	gap: 40px;
+}
+
+footer article section {
+	width: 255px;
+	max-width: 255px;
+}
+
+footer article section:first-child {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+footer article section:first-child h5 {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	gap: 8px;
+}
+
+footer article section:first-child h5 span {
+	width: 28px;
+	height: 28px;
+	padding: 0.4rem;
+	border-radius: 50%;
+}
+
+footer article section:last-child {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+footer article section:last-child h4 {
+	margin: 0;
+}
+
+footer article section:last-child h4 a {
+	margin-top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	color: #fff;
+	text-decoration: none;
+
+	gap: 6px;
+}
+
+footer article section:last-child h4 a span {
+	height: 24px;
+	width: 24px;
+}
+
+/* footer article section:last-child .social-media-btn-footer {
+	background-color: #0a264e;
+	border: none;
+	display: flex;
+	place-items: center;
+	border-radius: 4px;
+	padding-top: 5px;
+} */
+
+footer h4 {
+	text-align: center;
+}
