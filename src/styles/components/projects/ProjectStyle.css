@@ -1,0 +1,14 @@
+.projects-main {
+	display: flex;
+}
+
+.projects-main .projects-container {
+	margin: 3% auto;
+	max-width: 48rem;
+}
+
+@media screen and (max-width: 740px) {
+	.projects-main {
+		padding: 0rem 0.9rem;
+	}
+}

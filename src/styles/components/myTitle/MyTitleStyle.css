@@ -4,7 +4,7 @@
 	align-items: center;
 }
 
-.my-title-main .title-container {
+.my-title-main .about-container {
 	margin: 10% auto 6%;
 	max-width: 50rem;
 
@@ -12,12 +12,12 @@
 	gap: 2rem;
 }
 
-.my-title-main .title-container .user-basic-info .name-dev {
+.my-title-main .about-container .user-basic-info .name-dev {
 	font-size: 3rem;
 	margin: 0;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev {
+.my-title-main .about-container .user-basic-info .job-dev {
 	font-size: 1.4rem;
 	margin: 0 0 2rem 0;
 
@@ -26,11 +26,11 @@
 	gap: 30px;
 }
 
-.my-title-main .title-container .user-basic-info .resume {
+.my-title-main .about-container > .user-basic-info .resume {
 	margin: 0 0 2rem 0;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .badge {
+.my-title-main .about-container .user-basic-info .job-dev .badge {
 	position: relative;
 	display: block;
 	font-size: 0.85rem;
@@ -41,7 +41,7 @@
 	border-radius: 8px 0 0 8px;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle-l {
+.my-title-main .about-container .user-basic-info .job-dev .triangle-l {
 	position: absolute;
 	height: 0;
 	width: 0;
@@ -49,7 +49,7 @@
 	left: -16px;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle-r {
+.my-title-main .about-container .user-basic-info .job-dev .triangle-r {
 	position: absolute;
 	display: block;
 	height: 0;
@@ -58,35 +58,35 @@
 	right: -16px;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle-top-l {
+.my-title-main .about-container .user-basic-info .job-dev .triangle-top-l {
 	display: none;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle-bot-l {
+.my-title-main .about-container .user-basic-info .job-dev .triangle-bot-l {
 	display: none;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle-top-r {
+.my-title-main .about-container .user-basic-info .job-dev .triangle-top-r {
 	top: 0;
 	border-right: 16px solid transparent;
 
 	border-top: 13px solid #00ffff98;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle-bot-r {
+.my-title-main .about-container .user-basic-info .job-dev .triangle-bot-r {
 	bottom: 0;
 	border-right: 16px solid transparent;
 
 	border-bottom: 13px solid #00ffff98;
 }
 
-.my-title-main .title-container .user-basic-info {
+.my-title-main .about-container .user-basic-info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.my-title-main .title-container .user-basic-info .social-media-btn-group {
+.my-title-main .about-container .user-basic-info .social-media-btn-group {
 	display: flex;
 	gap: 1rem;
 	justify-content: flex-start;
@@ -94,7 +94,7 @@
 }
 
 .my-title-main
-	.title-container
+	.about-container
 	.user-basic-info
 	.social-media-btn-group
 	.download-cv {
@@ -107,7 +107,7 @@
 }
 
 .my-title-main
-	.title-container
+	.about-container
 	.user-basic-info
 	.social-media-btn-group
 	.download-cv
@@ -123,7 +123,7 @@
 }
 
 .my-title-main
-	.title-container
+	.about-container
 	.user-basic-info
 	.social-media-btn-group
 	.social-media-btn {
@@ -135,7 +135,7 @@
 }
 
 .my-title-main
-	.title-container
+	.about-container
 	.user-basic-info
 	.social-media-btn-group
 	.social-media-btn
@@ -145,7 +145,7 @@
 }
 
 .my-title-main
-	.title-container
+	.about-container
 	.user-basic-info
 	.social-media-btn-group
 	.social-media-btn:hover
@@ -155,53 +155,53 @@
 	transition: all 0.2s ease-out;
 }
 
-.my-title-main .title-container .user-img {
+.my-title-main .about-container .user-img {
 	display: flex;
 }
 
-.my-title-main .title-container .user-img .img-unit {
+.my-title-main .about-container .user-img .img-unit {
 	width: 220px;
 	border-radius: 50%;
 	margin: auto;
 }
 
 @media screen and (max-width: 740px) {
-	.my-title-main .title-container {
+	.my-title-main .about-container {
 		flex-direction: column-reverse;
 		gap: 10px;
 	}
 
-	.my-title-main .title-container .user-basic-info {
+	.my-title-main .about-container .user-basic-info {
 		align-items: center;
 		gap: 10px;
 	}
 
-	.my-title-main .title-container .user-basic-info .name-dev {
+	.my-title-main .about-container .user-basic-info .name-dev {
 		font-size: 2.1rem;
 	}
 
-	.my-title-main .title-container .user-basic-info .resume {
+	.my-title-main .about-container .user-basic-info .resume {
 		max-width: 30rem;
 		margin: 0;
 	}
 
-	.my-title-main .title-container .user-basic-info .job-dev {
+	.my-title-main .about-container .user-basic-info .job-dev {
 		font-size: 1.2rem;
 		margin: 0;
 	}
 }
 
 @media screen and (max-width: 480px) {
-	.my-title-main .title-container .user-basic-info .job-dev {
+	.my-title-main .about-container .user-basic-info .job-dev {
 		flex-direction: column;
 		gap: 10px;
 	}
 
-	.my-title-main .title-container .user-basic-info .job-dev .badge {
+	.my-title-main .about-container .user-basic-info .job-dev .badge {
 		border-radius: 0;
 	}
 
-	.my-title-main .title-container .user-basic-info .job-dev .triangle-top-l {
+	.my-title-main .about-container .user-basic-info .job-dev .triangle-top-l {
 		top: 0;
 
 		display: block;
@@ -209,7 +209,7 @@
 		border-top: 13px solid #00ffff98;
 	}
 
-	.my-title-main .title-container .user-basic-info .job-dev .triangle-bot-l {
+	.my-title-main .about-container .user-basic-info .job-dev .triangle-bot-l {
 		bottom: 0;
 
 		display: block;

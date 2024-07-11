@@ -1,0 +1,15 @@
+.title-container {
+	display: flex;
+	position: relative;
+	line-height: 1;
+	margin-bottom: 1.75rem;
+}
+
+.title-container .title {
+	padding-left: 1.75rem;
+}
+
+.title-container .icon-container {
+	position: absolute;
+	left: -14px;
+}

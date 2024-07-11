@@ -14,7 +14,7 @@ interface MyTitleInterface {
 function MyTitle({ name, intro, openToWork, image }: MyTitleInterface) {
 	return (
 		<section className="my-title-main">
-			<section className="title-container">
+			<section className="about-container">
 				<section className="user-basic-info">
 					<h2 className="name-dev">{name}</h2>
 					<p className="job-dev">

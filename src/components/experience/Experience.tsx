@@ -3,17 +3,16 @@ import { Experiences } from 'src/variables/Variables';
 import { Icons } from '../icons/Icons';
 
 import 'src/styles/components/experience/ExperienceStyle.css';
+import Title from '../titleComp/Title';
 
 function Experience() {
 	return (
 		<section id="experiencia" className="experience-box-main">
 			<div className="experience-box-container">
-				<h2 className="experience-box-section-title">
-					<span className="experience-box-icon-container">
-						<Icons name="suitcase" color="#ffffff" size="24" />
-					</span>
-					Experiencia Laboral
-				</h2>
+				<Title
+					title="Experiencia Laboral"
+					icon={<Icons name="suitcase" color="#ffffff" size="24" />}
+				/>
 				{Experiences.map((experience) => {
 					const { title, startDate, endDate, description, status } = experience;
 					return (
