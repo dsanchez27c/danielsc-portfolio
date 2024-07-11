@@ -1,27 +1,33 @@
 .experience-box-main {
-  display: flex;
+	display: flex;
 }
 
 .experience-box-main .experience-box-container {
-  margin: 3% auto;
-  max-width: 48rem;
+	margin: 3% auto;
+	max-width: 48rem;
 }
 
 .experience-box-main .experience-box-container .experience-box-section-title {
-  margin-bottom: 2rem;
-  padding-left: 1.6rem;
-
-  position: relative;
+	margin-bottom: 2rem;
+	padding-left: 1.6rem;
+	line-height: 1;
+	position: relative;
 }
 
 .experience-box-main
-  .experience-box-container
-  .experience-box-section-title
-  .experience-box-icon-container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-  width: 24px;
-  height: 24px;
+	.experience-box-container
+	.experience-box-section-title
+	.experience-box-icon-container {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
+	width: 24px;
+	height: 24px;
+}
+
+@media screen and (max-width: 740px) {
+	.experience-box-main {
+		padding: 0rem 0.9rem;
+	}
 }

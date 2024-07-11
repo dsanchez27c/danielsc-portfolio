@@ -1,143 +1,219 @@
 .my-title-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .my-title-main .title-container {
-  margin: 10% auto 6%;
-  max-width: 50rem;
+	margin: 10% auto 6%;
+	max-width: 50rem;
 
-  display: flex;
-  gap: 2rem;
+	display: flex;
+	gap: 2rem;
 }
 
 .my-title-main .title-container .user-basic-info .name-dev {
-  font-size: 3rem;
-  margin: 0;
+	font-size: 3rem;
+	margin: 0;
 }
 
 .my-title-main .title-container .user-basic-info .job-dev {
-  font-size: 1.4rem;
-  margin: 0 0 2rem 0;
+	font-size: 1.4rem;
+	margin: 0 0 2rem 0;
 
-  display: flex;
-  align-items: center;
-  gap: 30px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
 }
 
 .my-title-main .title-container .user-basic-info .resume {
-  margin: 0 0 2rem 0;
+	margin: 0 0 2rem 0;
 }
 
 .my-title-main .title-container .user-basic-info .job-dev .badge {
-  position: relative;
-  display: block;
-  font-size: 0.85rem;
-  padding: 0.2rem 0.8rem;
-  font-weight: 700;
-  text-shadow: 0px 0px 2px #000;
-  background-color: #00ffff98;
-  border-radius: 8px 0 0 8px;
+	position: relative;
+	display: block;
+	font-size: 0.85rem;
+	padding: 0.2rem 0.8rem;
+	font-weight: 700;
+	text-shadow: 0px 0px 2px #000;
+	background-color: #00ffff98;
+	border-radius: 8px 0 0 8px;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle {
-  position: absolute;
-  right: -16px;
-  display: block;
-  height: 0;
-  width: 0;
+.my-title-main .title-container .user-basic-info .job-dev .triangle-l {
+	position: absolute;
+	height: 0;
+	width: 0;
+
+	left: -16px;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle-top {
-  top: 0;
-  border-top: 13px solid #00ffff98;
-  border-right: 16px solid transparent;
+.my-title-main .title-container .user-basic-info .job-dev .triangle-r {
+	position: absolute;
+	display: block;
+	height: 0;
+	width: 0;
+
+	right: -16px;
 }
 
-.my-title-main .title-container .user-basic-info .job-dev .triangle-bot {
-  bottom: 0;
-  border-bottom: 13px solid #00ffff98;
-  border-right: 16px solid transparent;
+.my-title-main .title-container .user-basic-info .job-dev .triangle-top-l {
+	display: none;
+}
+
+.my-title-main .title-container .user-basic-info .job-dev .triangle-bot-l {
+	display: none;
+}
+
+.my-title-main .title-container .user-basic-info .job-dev .triangle-top-r {
+	top: 0;
+	border-right: 16px solid transparent;
+
+	border-top: 13px solid #00ffff98;
+}
+
+.my-title-main .title-container .user-basic-info .job-dev .triangle-bot-r {
+	bottom: 0;
+	border-right: 16px solid transparent;
+
+	border-bottom: 13px solid #00ffff98;
 }
 
 .my-title-main .title-container .user-basic-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .my-title-main .title-container .user-basic-info .social-media-btn-group {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-start;
-  align-items: center;
+	display: flex;
+	gap: 1rem;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .my-title-main
-  .title-container
-  .user-basic-info
-  .social-media-btn-group
-  .download-cv {
-  border: none;
-  outline: 1px solid white;
-  border-radius: 15px;
-  background-color: transparent;
-  padding: 0;
-  margin: 0.6rem 0;
+	.title-container
+	.user-basic-info
+	.social-media-btn-group
+	.download-cv {
+	border: none;
+	outline: 1px solid white;
+	border-radius: 15px;
+	background-color: transparent;
+	padding: 0;
+	margin: 0.6rem 0;
 }
 
 .my-title-main
-  .title-container
-  .user-basic-info
-  .social-media-btn-group
-  .download-cv
-  a {
-  border-radius: 15px;
-  padding: 0.4rem 1rem;
-  display: block;
-  text-decoration: none;
-  font-weight: 600;
+	.title-container
+	.user-basic-info
+	.social-media-btn-group
+	.download-cv
+	a {
+	border-radius: 15px;
+	padding: 0.4rem 1rem;
+	display: block;
+	text-decoration: none;
+	font-weight: 600;
 
-  user-select: none;
-  color: white;
+	user-select: none;
+	color: white;
 }
 
 .my-title-main
-  .title-container
-  .user-basic-info
-  .social-media-btn-group
-  .social-media-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0.2rem;
-  transition: all 0.3s ease-out;
+	.title-container
+	.user-basic-info
+	.social-media-btn-group
+	.social-media-btn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0.2rem;
+	transition: all 0.3s ease-out;
 }
 
 .my-title-main
-  .title-container
-  .user-basic-info
-  .social-media-btn-group
-  .social-media-btn
-  a
-  svg {
-  transition: all 0.2s ease-out;
+	.title-container
+	.user-basic-info
+	.social-media-btn-group
+	.social-media-btn
+	a
+	svg {
+	transition: all 0.2s ease-out;
 }
 
 .my-title-main
-  .title-container
-  .user-basic-info
-  .social-media-btn-group
-  .social-media-btn:hover
-  a
-  svg {
-  transform: scale(1.2);
-  transition: all 0.2s ease-out;
+	.title-container
+	.user-basic-info
+	.social-media-btn-group
+	.social-media-btn:hover
+	a
+	svg {
+	transform: scale(1.2);
+	transition: all 0.2s ease-out;
+}
+
+.my-title-main .title-container .user-img {
+	display: flex;
 }
 
 .my-title-main .title-container .user-img .img-unit {
-  height: 300px;
-  width: 220px;
-  border-radius: 25px;
+	width: 220px;
+	border-radius: 50%;
+	margin: auto;
+}
+
+@media screen and (max-width: 740px) {
+	.my-title-main .title-container {
+		flex-direction: column-reverse;
+		gap: 10px;
+	}
+
+	.my-title-main .title-container .user-basic-info {
+		align-items: center;
+		gap: 10px;
+	}
+
+	.my-title-main .title-container .user-basic-info .name-dev {
+		font-size: 2.1rem;
+	}
+
+	.my-title-main .title-container .user-basic-info .resume {
+		max-width: 30rem;
+		margin: 0;
+	}
+
+	.my-title-main .title-container .user-basic-info .job-dev {
+		font-size: 1.2rem;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.my-title-main .title-container .user-basic-info .job-dev {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.my-title-main .title-container .user-basic-info .job-dev .badge {
+		border-radius: 0;
+	}
+
+	.my-title-main .title-container .user-basic-info .job-dev .triangle-top-l {
+		top: 0;
+
+		display: block;
+		border-left: 16px solid transparent;
+		border-top: 13px solid #00ffff98;
+	}
+
+	.my-title-main .title-container .user-basic-info .job-dev .triangle-bot-l {
+		bottom: 0;
+
+		display: block;
+		border-left: 16px solid transparent;
+		border-bottom: 13px solid #00ffff98;
+	}
 }

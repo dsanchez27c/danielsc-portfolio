@@ -1,66 +1,88 @@
 .experience-container {
-  padding: 0rem 0rem 1rem 0rem;
+	padding: 0rem 0rem 1rem 0rem;
 }
 
 .experience-container p,
 h2 {
-  margin: 0;
+	margin: 0;
 }
 
 .experience-container .title-info-container {
-  position: relative;
+	position: relative;
 }
 
 .experience-container .title-info-container .icon-container {
-  position: absolute;
-  top: 50%;
-  left: 0rem;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 0rem;
+	transform: translate(-50%, -50%);
 
-  display: flex;
-  place-content: center;
+	display: flex;
+	place-content: center;
 
-  background-color: #ffffff61;
-  border-radius: 50%;
-  height: 14px;
-  width: 14px;
-  padding: 0.4rem;
+	background-color: #ffffff61;
+	border-radius: 50%;
+	height: 14px;
+	width: 14px;
+	padding: 0.4rem;
 }
 
 .experience-container .title-info-container .experience-title {
-  display: flex;
-  align-items: center;
-  padding-left: 1.7rem;
-  margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	padding-left: 1.7rem;
+	margin-bottom: 1rem;
 }
 
 .experience-container
-  .title-info-container
-  .experience-title
-  .experience-status {
-  font-size: 0.8rem;
-  font-weight: 700;
-  background-color: #ffffff83;
-  color: #000000;
+	.title-info-container
+	.experience-title
+	.experience-status {
+	font-size: 0.8rem;
+	font-weight: 700;
+	background-color: #ffffff83;
+	color: #000000;
 
-  margin-left: 1rem;
+	margin-left: 1rem;
 
-  padding: 0.1rem 0.7rem;
-  border: 1px solid #ffffff;
-  border-radius: 25px;
+	padding: 0.1rem 0.7rem;
+	border: 1px solid #ffffff;
+	border-radius: 25px;
 }
 
 .experience-info {
-  border-left: 1px solid #ffffff52;
-  padding-left: 1.7rem;
-  padding-bottom: 2rem;
+	border-left: 1px solid #ffffff52;
+	padding-left: 1.7rem;
+	padding-bottom: 2rem;
 }
 
 .experience-info .date-info {
-  color: #ffffff96;
-  margin-bottom: 1rem;
+	color: #ffffff96;
+	margin-bottom: 1rem;
 }
 
 .experience-info .experience-description {
-  text-wrap: pretty;
+	text-wrap: pretty;
+}
+
+@media screen and (max-width: 740px) {
+	.experience-container {
+		max-width: 28rem;
+	}
+
+	.experience-container .title-info-container .experience-title {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.experience-container
+		.title-info-container
+		.experience-title
+		.experience-status {
+		margin: 0.75rem 0 0;
+	}
+
+	.experience-container .title-info-container .icon-container {
+		top: 16%;
+	}
 }

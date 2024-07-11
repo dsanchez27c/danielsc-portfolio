@@ -1,5 +1,5 @@
 .project-article {
-	max-width: 48rem;
+	max-width: 50rem;
 	margin: 3% auto;
 }
 
@@ -44,4 +44,10 @@
 
 .project-article .project-tag-list .project-tag-list-el:hover {
 	background-color: #ffffff60;
+}
+
+@media screen and (max-width: 740px) {
+	.project-article {
+		max-width: 29rem;
+	}
 }

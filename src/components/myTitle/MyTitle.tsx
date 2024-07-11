@@ -21,9 +21,11 @@ function MyTitle({ name, intro, openToWork, image }: MyTitleInterface) {
 						Frontend Developer{' '}
 						{openToWork ? (
 							<span className="badge">
+								<span className="triangle-l triangle-top-l"></span>
+								<span className="triangle-l triangle-bot-l"></span>
 								Disponible para trabajar
-								<span className="triangle triangle-top"></span>
-								<span className="triangle triangle-bot"></span>
+								<span className="triangle-r triangle-top-r"></span>
+								<span className="triangle-r triangle-bot-r"></span>
 							</span>
 						) : (
 							<>Already working!</>
