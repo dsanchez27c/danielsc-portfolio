@@ -1,6 +1,7 @@
 import { ExperiencesInt, ProjectsInt } from 'src/interfaces/Interfaces';
 import PresProjectOne from './../assets/img-project-presentation-1.webp';
 import PresProjectTwo from './../assets/img-project-presentation-2.webp';
+import { Icons } from 'src/components/icons/Icons';
 
 export const VAR_ITEMS: string[] = ['Intro', 'Experiencia', 'Proyectos'];
 
@@ -13,6 +14,7 @@ export const Experiences: ExperiencesInt[] = [
 		status: 'Finalizado',
 		description:
 			'Creación de aplicaciones web funcionales y colaboración con el equipo de Diseño para incorporar componentes a proyectos existentes. Trabajo estrecho con el equipo de Backend para integrar endpoints y optimizar la comunicación entre las partes del sistema. Desarrollo de diversos formularios desde encuestas a registro de usuarios, asegurando usabilidad y validación de datos. Actualización de contenido en proyectos basados en Wordpress y Shopify. Creación de email personalizados para empresas en Colombia.',
+		icon: <Icons name="calendar" color="#ffffff" size="13" />,
 	},
 ];
 

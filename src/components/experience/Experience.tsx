@@ -14,7 +14,8 @@ function Experience() {
 					icon={<Icons name="suitcase" color="#ffffff" size="24" />}
 				/>
 				{Experiences.map((experience) => {
-					const { title, startDate, endDate, description, status } = experience;
+					const { title, startDate, endDate, description, status, icon } =
+						experience;
 					return (
 						<ExpBoxShow
 							key={title}
@@ -23,7 +24,7 @@ function Experience() {
 							endDate={endDate}
 							description={description}
 							status={status}
-							icon={<Icons name="calendar" color="#ffffff" size="13" />}
+							icon={icon}
 						/>
 					);
 				})}
