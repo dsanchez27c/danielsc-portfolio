@@ -1,8 +1,9 @@
 import 'src/styles/components/header/HeaderStyle.css';
+import HeaderMobile from '../headerMobile/HeaderMobile';
+
+export const VAR_ITEMS: string[] = ['Intro', 'Experiencia', 'Proyectos'];
 
 function Header() {
-	const VAR_ITEMS: string[] = ['Intro', 'Experiencia', 'Proyectos'];
-
 	document.addEventListener('scroll', () => {
 		const header = document.querySelector('header');
 
@@ -21,6 +22,8 @@ function Header() {
 						<em>Frontend Dev</em>
 					</h3>
 				</section>
+
+				<HeaderMobile />
 
 				<section className="header-nav">
 					<nav className="nav-bar">

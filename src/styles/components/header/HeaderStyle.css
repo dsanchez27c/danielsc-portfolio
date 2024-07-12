@@ -119,4 +119,8 @@
 	.header-container .header-article .header-nav {
 		display: none;
 	}
+
+	.header-container .header-article {
+		position: relative;
+	}
 }
