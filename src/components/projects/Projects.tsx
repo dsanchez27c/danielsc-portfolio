@@ -11,7 +11,7 @@ function Projects() {
 			<div className="projects-container">
 				<Title
 					title="Proyectos"
-					icon=<Icons name="code" size="28" color="#fff" />
+					icon={<Icons name="code" size="28" color="#fff" />}
 				/>
 				{ProjectList.map(
 					({ title, description, link, github, image, tags }) => {

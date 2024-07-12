@@ -23,6 +23,7 @@ function Experience() {
 							endDate={endDate}
 							description={description}
 							status={status}
+							icon={<Icons name="calendar" color="#ffffff" size="13" />}
 						/>
 					);
 				})}

@@ -1,7 +1,6 @@
 import 'src/styles/components/header/HeaderStyle.css';
 import HeaderMobile from '../headerMobile/HeaderMobile';
-
-export const VAR_ITEMS: string[] = ['Intro', 'Experiencia', 'Proyectos'];
+import { VAR_ITEMS } from 'src/variables/Variables';
 
 function Header() {
 	document.addEventListener('scroll', () => {

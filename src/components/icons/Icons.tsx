@@ -1,8 +1,4 @@
-interface IconIntercface {
-	color?: string;
-	name: string;
-	size: string;
-}
+import { IconIntercface } from 'src/interfaces/Interfaces';
 
 const getIconName = ({ name, color, size }: IconIntercface) => {
 	switch (name) {

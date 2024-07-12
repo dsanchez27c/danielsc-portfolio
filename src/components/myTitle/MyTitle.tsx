@@ -3,13 +3,7 @@ import 'src/styles/components/myTitle/MyTitleStyle.css';
 import AccessBtn from 'src/components/accessBtn/AccessBtn';
 
 import PortfolioPDFSpanish from 'src/pdf/DS HDV Enero24 -spa.pdf';
-
-interface MyTitleInterface {
-	name: string;
-	intro: string;
-	openToWork: boolean;
-	image?: any;
-}
+import { MyTitleInterface } from 'src/interfaces/Interfaces';
 
 function MyTitle({ name, intro, openToWork, image }: MyTitleInterface) {
 	return (

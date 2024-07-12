@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { VAR_ITEMS } from '../header/Header';
 import { Icons } from '../icons/Icons';
 import 'src/styles/components/headerMobile/HeaderMobileStyle.css';
+import { VAR_ITEMS } from 'src/variables/Variables';
 
 const HeaderMobile = () => {
 	const [open, setOpen] = useState(false);

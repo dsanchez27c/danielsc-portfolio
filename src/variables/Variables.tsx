@@ -2,6 +2,8 @@ import { ExperiencesInt, ProjectsInt } from 'src/interfaces/Interfaces';
 import PresProjectOne from './../assets/img-project-presentation-1.webp';
 import PresProjectTwo from './../assets/img-project-presentation-2.webp';
 
+export const VAR_ITEMS: string[] = ['Intro', 'Experiencia', 'Proyectos'];
+
 /// datos para experiencias
 export const Experiences: ExperiencesInt[] = [
 	{

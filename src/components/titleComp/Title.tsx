@@ -1,10 +1,5 @@
-import { ReactNode } from 'react';
+import { TitleInterface } from 'src/interfaces/Interfaces';
 import 'src/styles/components/titleComp/TitleStyle.css';
-
-interface TitleInterface {
-	title: string;
-	icon: ReactNode;
-}
 
 const Title = ({ title, icon }: TitleInterface) => {
 	return (
