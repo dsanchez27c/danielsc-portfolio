@@ -3,12 +3,16 @@
 }
 
 .projects-main .projects-container {
-	margin: 12% auto 3%;
+	margin: 3% auto;
 	max-width: 48rem;
 }
 
 @media screen and (max-width: 740px) {
 	.projects-main {
 		padding: 0rem 0.9rem;
+	}
+
+	.projects-main .projects-container {
+		margin: 12% auto 3%;
 	}
 }

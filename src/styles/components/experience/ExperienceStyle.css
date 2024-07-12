@@ -3,7 +3,7 @@
 }
 
 .experience-box-main .experience-box-container {
-	margin: 12% auto 6%;
+	margin: 3% auto;
 	max-width: 48rem;
 }
 
@@ -29,5 +29,9 @@
 @media screen and (max-width: 740px) {
 	.experience-box-main {
 		padding: 0rem 0.9rem;
+	}
+
+	.experience-box-main .experience-box-container {
+		margin: 12% auto 6%;
 	}
 }
