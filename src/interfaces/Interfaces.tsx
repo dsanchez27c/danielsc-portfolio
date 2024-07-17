@@ -22,9 +22,11 @@ export interface ProjectsInt {
 
 export interface MyTitleInterface {
 	name: string;
+	job: string;
 	intro: string;
 	openToWork: boolean;
 	image?: any;
+	downloadText: string;
 }
 
 export interface TitleInterface {

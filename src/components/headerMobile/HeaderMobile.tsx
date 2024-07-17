@@ -1,9 +1,16 @@
 import { useState } from 'react';
 import { Icons } from '../icons/Icons';
 import 'src/styles/components/headerMobile/HeaderMobileStyle.css';
-import { VAR_ITEMS } from 'src/variables/Variables';
+import { useTranslation } from 'react-i18next';
 
 const HeaderMobile = () => {
+	const [t] = useTranslation('global');
+
+	const VAR_ITEMS: string[] = [
+		`${t('header.intro')}`,
+		`${t('header.experience')}`,
+		`${t('header.projects')}`,
+	];
 	const [open, setOpen] = useState(false);
 
 	return (

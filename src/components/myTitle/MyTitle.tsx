@@ -5,14 +5,21 @@ import AccessBtn from 'src/components/accessBtn/AccessBtn';
 import PortfolioPDFSpanish from 'src/pdf/DS HDV Enero24 -spa.pdf';
 import { MyTitleInterface } from 'src/interfaces/Interfaces';
 
-function MyTitle({ name, intro, openToWork, image }: MyTitleInterface) {
+function MyTitle({
+	name,
+	job,
+	intro,
+	openToWork,
+	image,
+	downloadText,
+}: MyTitleInterface) {
 	return (
 		<section className="my-title-main">
 			<section className="about-container">
 				<section className="user-basic-info">
 					<h2 className="name-dev">{name}</h2>
 					<p className="job-dev">
-						Frontend Developer{' '}
+						{job}{' '}
 						{openToWork ? (
 							<span className="badge">
 								<span className="triangle-l triangle-top-l"></span>
@@ -31,7 +38,7 @@ function MyTitle({ name, intro, openToWork, image }: MyTitleInterface) {
 						<AccessBtn
 							classBtn="download-cv"
 							href={PortfolioPDFSpanish}
-							textBtn="Descargar CV"
+							textBtn={downloadText}
 						/>
 						<AccessBtn
 							classBtn="social-media-btn"

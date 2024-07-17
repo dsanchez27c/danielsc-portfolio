@@ -1,8 +1,19 @@
 import 'src/styles/components/header/HeaderStyle.css';
 import HeaderMobile from '../headerMobile/HeaderMobile';
-import { VAR_ITEMS } from 'src/variables/Variables';
+
+import { useTranslation } from 'react-i18next';
+import { ChangeEvent, useEffect, useState } from 'react';
 
 function Header() {
+	const [t, i18n] = useTranslation('global');
+	const [languageChecked, setLanguageChecked] = useState(false);
+
+	const VAR_ITEMS: string[] = [
+		`${t('header.intro')}`,
+		`${t('header.experience')}`,
+		`${t('header.projects')}`,
+	];
+
 	document.addEventListener('scroll', () => {
 		const header = document.querySelector('header');
 
@@ -13,18 +24,35 @@ function Header() {
 		}
 	});
 
+	useEffect(() => {
+		if (navigator.language.includes('en')) {
+			setLanguageChecked(true);
+		}
+	}, []);
+
+	function languageChange(e: ChangeEvent<HTMLInputElement>) {
+		const targetChecked = e.target.checked;
+		if (targetChecked) {
+			setLanguageChecked(targetChecked);
+			i18n.changeLanguage('en');
+		} else {
+			setLanguageChecked(targetChecked);
+			i18n.changeLanguage('es');
+		}
+	}
+
 	return (
 		<header className="header-container">
-			<article className="header-article">
-				<section className="open-sidebar-container">
+			<section className="header-article">
+				<article className="open-sidebar-container">
 					<h3>
 						<em>Frontend Dev</em>
 					</h3>
-				</section>
+				</article>
 
 				<HeaderMobile />
 
-				<section className="header-nav">
+				<article className="header-nav">
 					<nav className="nav-bar">
 						<ul className="nav-bar-list">
 							{VAR_ITEMS.map((item: string) => {
@@ -39,8 +67,20 @@ function Header() {
 							})}
 						</ul>
 					</nav>
-				</section>
-			</article>
+				</article>
+			</section>
+			<section className="header-language-btn">
+				<label className="switch">
+					<input
+						type="checkbox"
+						checked={languageChecked}
+						onChange={(e) => {
+							languageChange(e);
+						}}
+					/>
+					<span className="slider round"></span>
+				</label>
+			</section>
 		</header>
 	);
 }

@@ -5,15 +5,20 @@ import UserImage from 'src/assets/user-img-sq.webp';
 import Experience from 'src/components/experience/Experience';
 import MyTitle from 'src/components/myTitle/MyTitle';
 import Projects from 'src/components/projects/Projects';
+import { useTranslation } from 'react-i18next';
 
 function Content() {
+	const [t] = useTranslation('global');
+
 	return (
 		<main className="content-main-pf">
 			<MyTitle
 				name="Daniel Sánchez"
-				intro="+1 año y medio de experiencia. Desarrollador Web Frontend de Falcón, Venezuela. Me especializo en crear páginas funcionales a partir de diseños y modelos de trabajo."
+				job={t('mytitle.job')}
+				intro={t('mytitle.description')}
 				openToWork={true}
 				image={UserImage}
+				downloadText={t('mytitle.downloadbtn')}
 			/>
 			<Experience />
 			<Projects />

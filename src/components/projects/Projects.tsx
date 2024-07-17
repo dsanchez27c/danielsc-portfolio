@@ -4,10 +4,13 @@ import Title from '../titleComp/Title';
 import { Icons } from '../icons/Icons';
 
 import 'src/styles/components/projects/ProjectStyle.css';
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+	const [t] = useTranslation('global');
+	let idProjects = t('header.projects').toLowerCase();
 	return (
-		<section id="proyectos" className="projects-main">
+		<section id={idProjects} className="projects-main">
 			<div className="projects-container">
 				<Title
 					title="Proyectos"
