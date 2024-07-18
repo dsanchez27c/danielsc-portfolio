@@ -5,6 +5,12 @@
 @media screen and (max-width: 640px) {
 	.sec-mb-container {
 		display: block;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		padding-right: 2rem;
 	}
 
 	.sec-mb-container .link {

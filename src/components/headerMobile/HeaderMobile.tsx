@@ -2,15 +2,11 @@ import { useState } from 'react';
 import { Icons } from '../icons/Icons';
 import 'src/styles/components/headerMobile/HeaderMobileStyle.css';
 import { useTranslation } from 'react-i18next';
+import { VAR_ITEM_KEYS } from 'src/variables/Variables';
 
 const HeaderMobile = () => {
 	const [t] = useTranslation('global');
 
-	const VAR_ITEMS: string[] = [
-		`${t('header.intro')}`,
-		`${t('header.experience')}`,
-		`${t('header.projects')}`,
-	];
 	const [open, setOpen] = useState(false);
 
 	return (
@@ -24,7 +20,7 @@ const HeaderMobile = () => {
 				<Icons name="menu" size="30" color="#fff" />
 			</button>
 			<ul className={`dropdown-menu ${open ? 'dropdown-menu-open' : ''}`}>
-				{VAR_ITEMS.map((item: string) => {
+				{VAR_ITEM_KEYS.map((item: string) => {
 					return (
 						<li key={item} className="dropdown-menu-item">
 							<button
@@ -32,7 +28,7 @@ const HeaderMobile = () => {
 									setOpen(!open);
 								}}
 							>
-								<a href={`#${item.toLowerCase()}`}>{item}</a>
+								<a href={`#${t(item).toLowerCase()}`}>{t(item)}</a>
 							</button>
 						</li>
 					);

@@ -17,6 +17,7 @@ function Content() {
 				job={t('mytitle.job')}
 				intro={t('mytitle.description')}
 				openToWork={true}
+				openToWorkText={t('mytitle.openToWork')}
 				image={UserImage}
 				downloadText={t('mytitle.downloadbtn')}
 			/>

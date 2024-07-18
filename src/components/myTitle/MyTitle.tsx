@@ -2,7 +2,8 @@ import 'src/styles/components/myTitle/MyTitleStyle.css';
 
 import AccessBtn from 'src/components/accessBtn/AccessBtn';
 
-import PortfolioPDFSpanish from 'src/pdf/DS HDV Enero24 -spa.pdf';
+import PortfolioPDFSpanish from 'src/pdf/DS HDV Enero24 -español.pdf';
+import PortfolioPDFEnglish from 'src/pdf/DS HDV Enero24 -english.pdf';
 import { MyTitleInterface } from 'src/interfaces/Interfaces';
 
 function MyTitle({
@@ -10,6 +11,7 @@ function MyTitle({
 	job,
 	intro,
 	openToWork,
+	openToWorkText,
 	image,
 	downloadText,
 }: MyTitleInterface) {
@@ -24,7 +26,7 @@ function MyTitle({
 							<span className="badge">
 								<span className="triangle-l triangle-top-l"></span>
 								<span className="triangle-l triangle-bot-l"></span>
-								Disponible para trabajar
+								{openToWorkText}
 								<span className="triangle-r triangle-top-r"></span>
 								<span className="triangle-r triangle-bot-r"></span>
 							</span>
@@ -37,7 +39,11 @@ function MyTitle({
 					<article className="social-media-btn-group">
 						<AccessBtn
 							classBtn="download-cv"
-							href={PortfolioPDFSpanish}
+							href={
+								localStorage.getItem('currentLng') === 'en'
+									? PortfolioPDFEnglish
+									: PortfolioPDFSpanish
+							}
 							textBtn={downloadText}
 						/>
 						<AccessBtn

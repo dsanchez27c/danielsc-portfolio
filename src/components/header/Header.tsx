@@ -3,16 +3,13 @@ import HeaderMobile from '../headerMobile/HeaderMobile';
 
 import { useTranslation } from 'react-i18next';
 import { ChangeEvent, useEffect, useState } from 'react';
+import { VAR_ITEM_KEYS } from 'src/variables/Variables';
 
 function Header() {
 	const [t, i18n] = useTranslation('global');
-	const [languageChecked, setLanguageChecked] = useState(false);
-
-	const VAR_ITEMS: string[] = [
-		`${t('header.intro')}`,
-		`${t('header.experience')}`,
-		`${t('header.projects')}`,
-	];
+	const [languageChecked, setLanguageChecked] = useState(
+		localStorage.getItem('currentLng') === 'en' ? true : false
+	);
 
 	document.addEventListener('scroll', () => {
 		const header = document.querySelector('header');
@@ -25,7 +22,7 @@ function Header() {
 	});
 
 	useEffect(() => {
-		if (navigator.language.includes('en')) {
+		if (navigator.language.slice(0, 2) === 'en') {
 			setLanguageChecked(true);
 		}
 	}, []);
@@ -35,9 +32,11 @@ function Header() {
 		if (targetChecked) {
 			setLanguageChecked(targetChecked);
 			i18n.changeLanguage('en');
+			localStorage.setItem('currentLng', 'en');
 		} else {
 			setLanguageChecked(targetChecked);
 			i18n.changeLanguage('es');
+			localStorage.setItem('currentLng', 'es');
 		}
 	}
 
@@ -50,18 +49,15 @@ function Header() {
 					</h3>
 				</article>
 
-				<HeaderMobile />
-
 				<article className="header-nav">
 					<nav className="nav-bar">
 						<ul className="nav-bar-list">
-							{VAR_ITEMS.map((item: string) => {
+							{VAR_ITEM_KEYS.map((item: string) => {
 								return (
 									<li key={item} className="nav-bar-item">
-										<a className="nav-link" href={`#${item.toLowerCase()}`}>
-											{item}
+										<a className="nav-link" href={`#${t(item).toLowerCase()}`}>
+											{t(item)}
 										</a>
-										<span className="hover-list-line"></span>
 									</li>
 								);
 							})}
@@ -69,6 +65,7 @@ function Header() {
 					</nav>
 				</article>
 			</section>
+
 			<section className="header-language-btn">
 				<label className="switch">
 					<input
@@ -81,6 +78,8 @@ function Header() {
 					<span className="slider round"></span>
 				</label>
 			</section>
+
+			<HeaderMobile />
 		</header>
 	);
 }

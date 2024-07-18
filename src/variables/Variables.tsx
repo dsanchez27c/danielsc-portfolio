@@ -16,6 +16,12 @@ import PresProjectTwo from './../assets/img-project-presentation-2.webp';
 // 	},
 // ];
 
+export const VAR_ITEM_KEYS: string[] = [
+	'header.intro',
+	'header.experience',
+	'header.projects',
+];
+
 export const ProjectList: ProjectsInt[] = [
 	{
 		title: 'tryshipyard - For Agencies, By Agencies',

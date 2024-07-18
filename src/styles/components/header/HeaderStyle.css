@@ -25,6 +25,8 @@
 	width: 100%;
 	max-width: 50rem;
 	margin-left: auto;
+
+	padding-left: 2rem;
 }
 
 .header-container .header-language-btn {
@@ -186,5 +188,9 @@
 
 	.header-container .header-article {
 		position: relative;
+	}
+
+	.header-container .header-language-btn {
+		padding: 0.5rem 1rem;
 	}
 }

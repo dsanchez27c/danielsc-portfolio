@@ -25,6 +25,7 @@ export interface MyTitleInterface {
 	job: string;
 	intro: string;
 	openToWork: boolean;
+	openToWorkText: string;
 	image?: any;
 	downloadText: string;
 }

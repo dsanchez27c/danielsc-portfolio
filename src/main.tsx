@@ -13,7 +13,10 @@ i18next.init({
 	interpolation: {
 		escapeValue: false,
 	},
-	lng: navigator.language.includes('en') ? 'en' : 'es',
+	lng:
+		localStorage.getItem('currentLng') ||
+		navigator.language.slice(0, 2) ||
+		'en',
 	resources: {
 		es: {
 			global: global_es,
