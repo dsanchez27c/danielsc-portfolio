@@ -13,12 +13,11 @@ function Experience() {
 
 	const Experiences: ExperiencesInt[] = [
 		{
-			title: 'Desarrollador Frontend - Antpack S.A.S.',
-			startDate: 'Marzo 01, 2022',
-			endDate: 'Abril 04, 2023',
-			status: 'Finalizado',
-			description:
-				'Creación de aplicaciones web funcionales y colaboración con el equipo de Diseño para incorporar componentes a proyectos existentes. Trabajo estrecho con el equipo de Backend para integrar endpoints y optimizar la comunicación entre las partes del sistema. Desarrollo de diversos formularios desde encuestas a registro de usuarios, asegurando usabilidad y validación de datos. Actualización de contenido en proyectos basados en Wordpress y Shopify. Creación de email personalizados para empresas en Colombia.',
+			title: t('experience.card.title'),
+			startDate: t('experience.card.startDate'),
+			endDate: t('experience.card.endDate'),
+			status: t('experience.card.status'),
+			description: t('experience.card.description'),
 			icon: <Icons name="calendar" color="#ffffff" size="13" />,
 		},
 	];
@@ -27,7 +26,7 @@ function Experience() {
 		<section id={idExperience} className="experience-box-main">
 			<div className="experience-box-container">
 				<Title
-					title="Experiencia Laboral"
+					title={t('experience.titleSection')}
 					icon={<Icons name="suitcase" color="#ffffff" size="24" />}
 				/>
 				{Experiences.map((experience) => {

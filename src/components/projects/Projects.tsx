@@ -13,7 +13,7 @@ function Projects() {
 		<section id={idProjects} className="projects-main">
 			<div className="projects-container">
 				<Title
-					title="Proyectos"
+					title={t('project.titleSection')}
 					icon={<Icons name="code" size="28" color="#fff" />}
 				/>
 				{ProjectList.map(

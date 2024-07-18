@@ -4,11 +4,31 @@
 		"experience": "Experience",
 		"projects": "Projects"
 	},
-  "mytitle":{
-    "job":"Frontend Developer",
-    "openToWork":"Open to Work",
-    "description": "+1 and a half years of experience. Frontend Web Developer from Falcón, Venezuela. I specialize in creating functional pages from designs and working models.",
-    "downloadbtn": "Download CV"
+	"mytitle": {
+		"job": "Frontend Developer",
+		"openToWork": "Open to Work",
+		"description": "+1 and a half years of experience. Frontend Web Developer from Falcón, Venezuela. I specialize in creating functional pages from designs and working models.",
+		"downloadbtn": "Download CV"
+	},
+	"experience": {
+		"titleSection": "Work Experience",
+		"card": {
+			"title": "Frontend Developer - Antpack S.A.S.",
+			"startDate": "March 01, 2022",
+			"endDate": "April 04, 2023",
+			"status": "Finalized",
+			"description": "Creation of functional web applications and collaboration with the Design team to incorporate components into existing projects. Work closely with the Backend team to integrate endpoints and optimize communication between parts of the system. Development of various forms from surveys to user registration, ensuring usability and data validation. Content update in projects based on Wordpress and Shopify. Creation of personalized emails for companies in Colombia"
+		}
+	},
+  "project":{
+    "titleSection": "Projects",
+    "card":{
+      "title": "tryshipyard - For Agencies, By Agencies",
+      "description": "Project made for agencies and work groups, where you can request personnel to work on new projects or apply your knowledge to other companies. Project of the company Antpack S.A.S. where I was part of the Frontend Development team working closely with the Design and Backend team providing the best experience to both users and the client."
+    },
+    "card2":{
+      "title": "LLM Local",
+      "description":"This project was created using one of the open source language models, such as ChatGPT. In this case gemma-2b was used. A simple interface was created as a chat where you can ask the AI ​​questions and it responds in real time. When starting the project, the LLM data is downloaded to the computer and then stored in the cache memory. Then, if you want to use it offline, the model is automatically loaded from the cache."
+    }
   }
 }
-

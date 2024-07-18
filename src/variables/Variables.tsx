@@ -24,9 +24,8 @@ export const VAR_ITEM_KEYS: string[] = [
 
 export const ProjectList: ProjectsInt[] = [
 	{
-		title: 'tryshipyard - For Agencies, By Agencies',
-		description:
-			'Proyecto hecho para las agencias y grupos de trabajo, en donde puedes solicitar personal para trabajar en nuevos proyectos o postular tus conocimientos otras emprezas. Proyecto de la empreza Antpack S.A.S. en donde formé parte del equipo de Desarrollo Frontend trabajando estrechamente con el equipo de Diseño y Backend proporcionando la mejor experiencia tanto a los usuarios cómo al cliente.',
+		title: 'project.card.title',
+		description: 'project.card.description',
 		link: 'https://tryshipyard.com/',
 		github: '',
 		image: PresProjectOne,
@@ -42,9 +41,8 @@ export const ProjectList: ProjectsInt[] = [
 		],
 	},
 	{
-		title: 'LLM Local',
-		description:
-			'Este proyecto fue creado utilizando uno de los modelos de lenguaje, cómo ChatGPT, de código abierto. En este caso se utilizó gemma-2b. Se creó una interfaz sencilla a manera de un chat en donde se le pueden hacer preguntar a la IA y esta responde en tiempo real. Al iniciar el proyecto, se descargan los datos del LLM en el ordenador que luego son almacenados en la memoria cache. Luego, si se quiere utilizar de manera offline, el modelo se carga automaticamente del cache.',
+		title: 'project.card2.title',
+		description: 'project.card2.description',
 		link: '',
 		github: '',
 		image: PresProjectTwo,

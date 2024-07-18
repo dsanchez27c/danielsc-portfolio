@@ -68,6 +68,7 @@ h2 {
 @media screen and (max-width: 740px) {
 	.experience-container {
 		max-width: 28rem;
+		min-height: 28.75rem;
 	}
 
 	.experience-container .title-info-container .experience-title {
