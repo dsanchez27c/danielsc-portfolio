@@ -15,8 +15,8 @@ function ProjectBox({
 
 	return (
 		<article className="project-article">
-			<h3 className="project-title">
-				<span className="project-title-icon">
+			<h3 className="project-title item-header">
+				<span className="item-icon">
 					<Icons name="book" color="#FFF" size="20" />
 				</span>
 				{t(title)}

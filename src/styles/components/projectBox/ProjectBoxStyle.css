@@ -5,12 +5,10 @@
 
 .project-article .project-title {
 	font-size: 1.5rem;
-	display: flex;
-	gap: 10px;
-	align-items: center;
 	margin-bottom: 1rem;
-
 	line-height: 1;
+	display: flex;
+	align-items: center;
 }
 
 .project-article .project-description {
@@ -79,14 +77,4 @@
 		margin-bottom: 2.5rem;
 	}
 
-	.project-article .project-title {
-		position: relative;
-		padding-left: 2.2rem;
-	}
-
-	.project-article .project-title .project-title-icon {
-		position: absolute;
-		left: 4px;
-		top: 2px;
-	}
 }

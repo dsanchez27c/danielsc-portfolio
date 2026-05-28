@@ -1,0 +1,26 @@
+.company-group {
+	padding-bottom: 0.5rem;
+}
+
+.company-group-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.25rem;
+}
+
+.company-group-icon {
+	background-color: var(--color-accent);
+}
+
+.company-group-name {
+	margin: 0;
+	font-size: 0.78rem;
+	font-weight: 800;
+	color: var(--color-accent);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.company-group-roles {
+	margin-left: 1.5rem;
+}

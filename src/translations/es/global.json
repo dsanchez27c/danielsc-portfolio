@@ -12,29 +12,39 @@
 	},
 	"experience": {
 		"titleSection": "Experiencia Laboral",
+		"duration": {
+			"year": "año",
+			"years": "años",
+			"month": "mes",
+			"months": "meses"
+		},
 		"card4": {
-			"title": "Full Stack ERP Odoo — LYD LATAM S.A.S.",
+			"company": "LYD LATAM S.A.S.",
+			"title": "Full Stack ERP Odoo",
 			"startDate": "Abril 2026",
 			"endDate": "Actualidad",
 			"status": "Actual",
 			"description": "Desarrollo como Full Stack ERP Odoo Developer, enfocado en diseñar e implementar módulos personalizados y soluciones a medida dentro del framework de Odoo utilizando Python, XML y OWL. Contribuyo activamente en un entorno Scrum, garantizando una ejecución organizada y eficiente alineada con los plazos del proyecto y las necesidades del negocio, manteniendo altos estándares de calidad y mejora continua."
 		},
 		"card3": {
-			"title": "Coordinador de Desarrollo — DFVZ TECH S.A.",
+			"company": "DFVZ TECH S.A.",
+			"title": "Coordinador de Desarrollo",
 			"startDate": "Marzo 2026",
 			"endDate": "Abril 2026",
 			"status": "Finalizado",
 			"description": "Coordiné y prioricé las tareas del equipo de desarrollo para garantizar entregas a tiempo, mientras recopilaba y analizaba requisitos técnicos y de negocio. Lideré la toma de decisiones técnicas y resolví incidencias de forma eficiente. Supervisé los procesos de desarrollo e integraciones de sistemas utilizando Python, XML y OWL."
 		},
 		"card2": {
-			"title": "Junior Developer — DFVZ TECH S.A.",
+			"company": "DFVZ TECH S.A.",
+			"title": "Junior Developer",
 			"startDate": "Agosto 2024",
 			"endDate": "Marzo 2026",
 			"status": "Finalizado",
 			"description": "Desarrollador Odoo con experiencia en múltiples versiones (15–17 y superiores). Especializado en desarrollo backend con Python y personalización frontend con XML y JavaScript. Diseñé e implementé módulos personalizados, mejoré funcionalidades existentes e integré modelos de IA para optimizar la eficiencia y automatización de procesos de negocio."
 		},
 		"card": {
-			"title": "Desarrollador Frontend — Antpack S.A.S.",
+			"company": "Antpack S.A.S.",
+			"title": "Desarrollador Frontend",
 			"startDate": "Marzo 01, 2022",
 			"endDate": "Abril 04, 2023",
 			"status": "Finalizado",

@@ -5,6 +5,7 @@
 .projects-main .projects-container {
 	margin: 2rem auto;
 	max-width: 48rem;
+	padding-left: 1rem;
 }
 
 @media screen and (max-width: 740px) {

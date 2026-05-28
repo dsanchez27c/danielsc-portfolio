@@ -4,11 +4,29 @@ export interface ExperiencesInt {
 	title: string;
 	startDate: string;
 	endDate?: string;
+	startDateRaw?: string;
+	endDateRaw?: string;
 	status: string | boolean;
 	isCurrent?: boolean;
 	charge?: string;
 	description: string;
 	icon: ReactNode;
+}
+
+export interface RoleInt {
+	title: string;
+	startDate: string;
+	endDate?: string;
+	startDateRaw: string;
+	endDateRaw?: string;
+	status: string;
+	isCurrent?: boolean;
+	description: string;
+}
+
+export interface ExperienceGroupInt {
+	company: string;
+	roles: RoleInt[];
 }
 
 export interface ProjectsInt {
