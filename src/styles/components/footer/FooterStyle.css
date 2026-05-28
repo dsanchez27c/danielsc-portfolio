@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
 	padding: 1.4rem 0 0.6rem;
-	background-color: #051a37;
+	background-color: var(--color-footer-bg);
 
 	display: flex;
 	flex-direction: column;
@@ -17,7 +17,6 @@ footer article {
 }
 
 footer article section {
-	/* width: 255px; */
 	max-width: 255px;
 }
 
@@ -27,63 +26,81 @@ footer article section:first-child {
 	gap: 10px;
 }
 
-footer article section:first-child h5 {
+footer article section:first-child p {
 	margin: 0;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-
 	gap: 8px;
 }
 
-footer article section:first-child h5 span {
+footer article section:first-child p span {
 	width: 28px;
 	height: 28px;
 	padding: 0.4rem;
 	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
 }
 
 footer article section:last-child {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 16px;
 }
 
-footer article section:last-child h4 {
-	margin: 0;
-}
-
-footer article section:last-child h4 a {
-	margin-top: 0;
+footer article section:last-child a {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-
+	gap: 6px;
 	color: #fff;
 	text-decoration: none;
-
-	gap: 6px;
+	transition: opacity 0.2s ease-out;
 }
 
-footer article section:last-child h4 a span {
+footer article section:last-child a:hover {
+	opacity: 0.8;
+}
+
+footer article section:last-child a span {
 	height: 24px;
 	width: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-footer h4 {
+footer .footer-copy {
 	text-align: center;
+	margin: 0.6rem 0 0;
+	font-size: 0.9rem;
+	color: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (max-width: 740px) {
 	footer {
-		margin-top: 3rem;
-		border-radius: 20% 20% 0 0;
+		margin-top: 2rem;
+		border-radius: 20px 20px 0 0;
 	}
 }
 
 @media screen and (max-width: 470px) {
 	footer article {
-		gap: 10px;
-		margin: 0;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+		padding: 0 1.5rem;
+	}
+
+	footer article section:last-child {
+		flex-direction: row;
+		gap: 24px;
+	}
+
+	footer article section:last-child a {
+		justify-content: flex-start;
 	}
 }

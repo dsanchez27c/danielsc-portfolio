@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 function Projects() {
 	const [t] = useTranslation('global');
-	let idProjects = t('header.projects').toLowerCase();
+	const idProjects = t('header.projects').toLowerCase();
 	return (
 		<section id={idProjects} className="projects-main">
 			<div className="projects-container">

@@ -3,8 +3,9 @@
 }
 
 .experience-box-main .experience-box-container {
-	margin: 3% auto;
+	margin: 2rem auto;
 	max-width: 48rem;
+	padding-left: 1rem;
 }
 
 .experience-box-main .experience-box-container .experience-box-section-title {
@@ -32,6 +33,6 @@
 	}
 
 	.experience-box-main .experience-box-container {
-		margin: 16% auto 0 auto;
+		margin: 2rem auto 0 auto;
 	}
 }

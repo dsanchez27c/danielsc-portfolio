@@ -1,14 +1,32 @@
 import { ReactNode } from 'react';
 
-/// interfaz para datos de experiencias
 export interface ExperiencesInt {
 	title: string;
 	startDate: string;
 	endDate?: string;
+	startDateRaw?: string;
+	endDateRaw?: string;
 	status: string | boolean;
+	isCurrent?: boolean;
 	charge?: string;
 	description: string;
 	icon: ReactNode;
+}
+
+export interface RoleInt {
+	title: string;
+	startDate: string;
+	endDate?: string;
+	startDateRaw: string;
+	endDateRaw?: string;
+	status: string;
+	isCurrent?: boolean;
+	description: string;
+}
+
+export interface ExperienceGroupInt {
+	company: string;
+	roles: RoleInt[];
 }
 
 export interface ProjectsInt {
@@ -26,7 +44,7 @@ export interface MyTitleInterface {
 	intro: string;
 	openToWork: boolean;
 	openToWorkText: string;
-	image?: any;
+	image?: string;
 	downloadText: string;
 }
 
@@ -35,8 +53,17 @@ export interface TitleInterface {
 	icon: ReactNode;
 }
 
-export interface IconIntercface {
+export interface IconInterface {
 	color?: string;
 	name: string;
 	size: string;
+}
+
+export interface AccessBtnType {
+	classBtn: string;
+	href: string;
+	nameIcon?: string;
+	sizeIcon?: string;
+	colorIcon?: string;
+	textBtn?: string;
 }

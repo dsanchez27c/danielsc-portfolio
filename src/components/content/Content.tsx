@@ -1,6 +1,5 @@
 import 'src/styles/components/content/contentStyle.css';
 import UserImage from 'src/assets/user-img-sq.webp';
-// import UserImage from 'src/assets/user-img.webp';
 
 import Experience from 'src/components/experience/Experience';
 import MyTitle from 'src/components/myTitle/MyTitle';

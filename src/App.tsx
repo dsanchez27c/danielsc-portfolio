@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 function App() {
 	const [t] = useTranslation('global');
 
-	let idIntro = t('header.intro').toLowerCase();
+	const idIntro = t('header.intro').toLowerCase();
 
 	return (
 		<section id={idIntro} className="app-main">

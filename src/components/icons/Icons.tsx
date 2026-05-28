@@ -1,6 +1,6 @@
-import { IconIntercface } from 'src/interfaces/Interfaces';
+import { IconInterface } from 'src/interfaces/Interfaces';
 
-const getIconName = ({ name, color, size }: IconIntercface) => {
+const getIconName = ({ name, color, size }: IconInterface) => {
 	switch (name) {
 		case 'email':
 			return (
@@ -316,7 +316,7 @@ const getIconName = ({ name, color, size }: IconIntercface) => {
 	}
 };
 
-const Icons = ({ name, color, size }: IconIntercface) => {
+const Icons = ({ name, color, size }: IconInterface) => {
 	const iconName: any = getIconName({ name, color, size });
 	return iconName;
 };

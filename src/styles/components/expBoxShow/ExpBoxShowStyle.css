@@ -3,7 +3,7 @@
 }
 
 .experience-container p,
-h2 {
+.experience-container h3 {
 	margin: 0;
 }
 
@@ -11,26 +11,10 @@ h2 {
 	position: relative;
 }
 
-.experience-container .title-info-container .icon-container {
-	position: absolute;
-	top: 50%;
-	left: 0rem;
-	transform: translate(-50%, -50%);
-
-	display: flex;
-	place-content: center;
-
-	background-color: #ffffff61;
-	border-radius: 50%;
-	height: 14px;
-	width: 14px;
-	padding: 0.4rem;
-}
-
 .experience-container .title-info-container .experience-title {
 	display: flex;
 	align-items: center;
-	padding-left: 1.7rem;
+	padding-left: 2rem;
 	margin-bottom: 1rem;
 }
 
@@ -50,15 +34,29 @@ h2 {
 	border-radius: 25px;
 }
 
+.experience-container
+	.title-info-container
+	.experience-title
+	.experience-status--current {
+	background-color: var(--color-accent);
+	color: #ffffff;
+	border-color: var(--color-accent);
+}
+
 .experience-info {
 	border-left: 1px solid #ffffff52;
-	padding-left: 1.7rem;
+	padding-left: 2rem;
 	padding-bottom: 2rem;
 }
 
 .experience-info .date-info {
 	color: #ffffff96;
 	margin-bottom: 1rem;
+}
+
+.experience-info .date-info .duration-badge {
+	opacity: 0.65;
+	font-size: 0.88em;
 }
 
 .experience-info .experience-description {
@@ -83,7 +81,7 @@ h2 {
 		margin: 0.75rem 0 0;
 	}
 
-	.experience-container .title-info-container .icon-container {
+	.experience-container .title-info-container .item-icon {
 		top: 16%;
 	}
 }
