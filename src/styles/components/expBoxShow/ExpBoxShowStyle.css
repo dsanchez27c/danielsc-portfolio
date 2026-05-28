@@ -50,6 +50,15 @@
 	border-radius: 25px;
 }
 
+.experience-container
+	.title-info-container
+	.experience-title
+	.experience-status--current {
+	background-color: var(--color-accent);
+	color: #ffffff;
+	border-color: var(--color-accent);
+}
+
 .experience-info {
 	border-left: 1px solid #ffffff52;
 	padding-left: 1.7rem;

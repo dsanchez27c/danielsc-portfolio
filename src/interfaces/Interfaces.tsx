@@ -5,6 +5,7 @@ export interface ExperiencesInt {
 	startDate: string;
 	endDate?: string;
 	status: string | boolean;
+	isCurrent?: boolean;
 	charge?: string;
 	description: string;
 	icon: ReactNode;

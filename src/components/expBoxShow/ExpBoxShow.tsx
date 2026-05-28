@@ -7,6 +7,7 @@ function ExpBoxShow({
 	endDate,
 	description,
 	status,
+	isCurrent,
 	icon,
 }: ExperiencesInt) {
 	return (
@@ -14,7 +15,10 @@ function ExpBoxShow({
 			<div className="title-info-container">
 				<span className="icon-container">{icon}</span>
 				<h3 className="experience-title">
-					{title} <span className="experience-status">{status}</span>
+					{title}{' '}
+					<span className={`experience-status${isCurrent ? ' experience-status--current' : ''}`}>
+						{status}
+					</span>
 				</h3>
 			</div>
 			<div className="experience-info">

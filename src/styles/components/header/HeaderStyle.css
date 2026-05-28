@@ -33,7 +33,15 @@
 	margin-right: auto;
 	display: flex;
 	align-items: center;
+	gap: 0.5rem;
 	padding: 0 1rem;
+}
+
+.header-container .header-language-btn .lang-label {
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 0.6);
+	user-select: none;
 }
 
 .header-container .header-language-btn .switch {

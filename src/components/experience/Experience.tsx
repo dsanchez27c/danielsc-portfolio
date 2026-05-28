@@ -13,6 +13,31 @@ function Experience() {
 
 	const Experiences: ExperiencesInt[] = [
 		{
+			title: t('experience.card4.title'),
+			startDate: t('experience.card4.startDate'),
+			endDate: t('experience.card4.endDate'),
+			status: t('experience.card4.status'),
+			isCurrent: true,
+			description: t('experience.card4.description'),
+			icon: <Icons name="calendar" color="#ffffff" size="13" />,
+		},
+		{
+			title: t('experience.card3.title'),
+			startDate: t('experience.card3.startDate'),
+			endDate: t('experience.card3.endDate'),
+			status: t('experience.card3.status'),
+			description: t('experience.card3.description'),
+			icon: <Icons name="calendar" color="#ffffff" size="13" />,
+		},
+		{
+			title: t('experience.card2.title'),
+			startDate: t('experience.card2.startDate'),
+			endDate: t('experience.card2.endDate'),
+			status: t('experience.card2.status'),
+			description: t('experience.card2.description'),
+			icon: <Icons name="calendar" color="#ffffff" size="13" />,
+		},
+		{
 			title: t('experience.card.title'),
 			startDate: t('experience.card.startDate'),
 			endDate: t('experience.card.endDate'),
@@ -30,7 +55,7 @@ function Experience() {
 					icon={<Icons name="suitcase" color="#ffffff" size="24" />}
 				/>
 				{Experiences.map((experience) => {
-					const { title, startDate, endDate, description, status, icon } =
+					const { title, startDate, endDate, description, status, isCurrent, icon } =
 						experience;
 					return (
 						<ExpBoxShow
@@ -40,6 +65,7 @@ function Experience() {
 							endDate={endDate}
 							description={description}
 							status={status}
+							isCurrent={isCurrent}
 							icon={icon}
 						/>
 					);

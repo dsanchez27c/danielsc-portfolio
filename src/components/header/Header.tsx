@@ -48,9 +48,7 @@ function Header() {
 		<header className="header-container">
 			<section className="header-article">
 				<article className="open-sidebar-container">
-					<h3>
-						<em>Frontend Dev</em>
-					</h3>
+					<h3>Daniel Sánchez</h3>
 				</article>
 
 				<article className="header-nav">
@@ -71,6 +69,7 @@ function Header() {
 			</section>
 
 			<section className="header-language-btn">
+				<span className="lang-label">ES</span>
 				<label className="switch">
 					<input
 						type="checkbox"
@@ -81,6 +80,7 @@ function Header() {
 					/>
 					<span className="slider round"></span>
 				</label>
+				<span className="lang-label">EN</span>
 			</section>
 
 			<HeaderMobile />

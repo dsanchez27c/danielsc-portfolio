@@ -5,30 +5,51 @@
 		"projects": "Projects"
 	},
 	"mytitle": {
-		"job": "Frontend Developer",
+		"job": "Web Developer",
 		"openToWork": "Open to Work",
-		"description": "+1 and a half years of experience. Frontend Web Developer from Falcón, Venezuela. I specialize in creating functional pages from designs and working models.",
+		"description": "+3 years of experience. Full Stack ERP Developer from Falcón, Venezuela. Specialized in Odoo development with Python, XML, and OWL, with a solid foundation in Frontend Web Development.",
 		"downloadbtn": "Download CV"
 	},
 	"experience": {
 		"titleSection": "Work Experience",
+		"card4": {
+			"title": "Full Stack ERP Odoo — LYD LATAM S.A.S.",
+			"startDate": "April 2026",
+			"endDate": "Present",
+			"status": "Current",
+			"description": "Working as a Full Stack ERP Odoo Developer, focused on designing and developing custom modules and tailored solutions within the Odoo framework using technologies such as Python, XML, and OWL. Actively contributing within a Scrum-based environment, ensuring organized and efficient task execution aligned with project timelines and business needs, while maintaining high-quality development standards and continuous system improvement."
+		},
+		"card3": {
+			"title": "Development Coordinator — DFVZ TECH S.A.",
+			"startDate": "March 2026",
+			"endDate": "April 2026",
+			"status": "Finalized",
+			"description": "Coordinated and prioritized development team tasks to ensure timely delivery, while gathering and analyzing both business and technical requirements. Led technical decision-making and efficiently resolved incidents, and oversaw development processes and system integrations using Python, XML, and OWL."
+		},
+		"card2": {
+			"title": "Junior Developer — DFVZ TECH S.A.",
+			"startDate": "August 2024",
+			"endDate": "March 2026",
+			"status": "Finalized",
+			"description": "Odoo Developer experienced across multiple versions (15–17 and beyond). Skilled in backend development with Python and frontend customization using XML and JavaScript. Designed and implemented custom modules, enhanced existing functionality, and integrated AI models to improve business efficiency and automation."
+		},
 		"card": {
-			"title": "Frontend Developer - Antpack S.A.S.",
+			"title": "Frontend Developer — Antpack S.A.S.",
 			"startDate": "March 01, 2022",
 			"endDate": "April 04, 2023",
 			"status": "Finalized",
-			"description": "Creation of functional web applications and collaboration with the Design team to incorporate components into existing projects. Work closely with the Backend team to integrate endpoints and optimize communication between parts of the system. Development of various forms from surveys to user registration, ensuring usability and data validation. Content update in projects based on Wordpress and Shopify. Creation of personalized emails for companies in Colombia"
+			"description": "Creation of functional web applications and collaboration with the Design team to incorporate components into existing projects. Work closely with the Backend team to integrate endpoints and optimize communication between parts of the system. Development of various forms from surveys to user registration, ensuring usability and data validation. Content update in projects based on Wordpress and Shopify. Creation of personalized emails for companies in Colombia."
 		}
 	},
-  "project":{
-    "titleSection": "Projects",
-    "card":{
-      "title": "tryshipyard - For Agencies, By Agencies",
-      "description": "Project made for agencies and work groups, where you can request personnel to work on new projects or apply your knowledge to other companies. Project of the company Antpack S.A.S. where I was part of the Frontend Development team working closely with the Design and Backend team providing the best experience to both users and the client."
-    },
-    "card2":{
-      "title": "LLM Local",
-      "description":"This project was created using one of the open source language models, such as ChatGPT. In this case gemma-2b was used. A simple interface was created as a chat where you can ask the AI ​​questions and it responds in real time. When starting the project, the LLM data is downloaded to the computer and then stored in the cache memory. Then, if you want to use it offline, the model is automatically loaded from the cache."
-    }
-  }
+	"project": {
+		"titleSection": "Projects",
+		"card": {
+			"title": "tryshipyard - For Agencies, By Agencies",
+			"description": "Project made for agencies and work groups, where you can request personnel to work on new projects or apply your knowledge to other companies. Project of the company Antpack S.A.S. where I was part of the Frontend Development team working closely with the Design and Backend team providing the best experience to both users and the client."
+		},
+		"card2": {
+			"title": "LLM Local",
+			"description": "This project was created using one of the open source language models, such as ChatGPT. In this case gemma-2b was used. A simple interface was created as a chat where you can ask the AI questions and it responds in real time. When starting the project, the LLM data is downloaded to the computer and then stored in the cache memory. Then, if you want to use it offline, the model is automatically loaded from the cache."
+		}
+	}
 }
