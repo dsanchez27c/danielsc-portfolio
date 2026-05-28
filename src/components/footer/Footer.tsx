@@ -1,5 +1,5 @@
 import { Icons } from '../icons/Icons';
-import './../../styles/components/footer/FooterStyle.css';
+import 'src/styles/components/footer/FooterStyle.css';
 
 function Footer() {
 	return (

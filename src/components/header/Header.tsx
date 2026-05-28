@@ -11,15 +11,19 @@ function Header() {
 		localStorage.getItem('currentLng') === 'en' ? true : false
 	);
 
-	document.addEventListener('scroll', () => {
-		const header = document.querySelector('header');
+	useEffect(() => {
+		const handleScroll = () => {
+			const header = document.querySelector('header');
+			if (window.scrollY > 30) {
+				header?.classList.add('header-container-scrolled');
+			} else {
+				header?.classList.remove('header-container-scrolled');
+			}
+		};
 
-		if (window.scrollY > 30) {
-			header?.classList.add('header-container-scrolled');
-		} else {
-			header?.classList.remove('header-container-scrolled');
-		}
-	});
+		document.addEventListener('scroll', handleScroll);
+		return () => document.removeEventListener('scroll', handleScroll);
+	}, []);
 
 	useEffect(() => {
 		if (navigator.language.slice(0, 2) === 'en') {

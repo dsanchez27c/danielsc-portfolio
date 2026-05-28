@@ -74,11 +74,11 @@
 }
 
 .header-container .header-language-btn .switch input:checked + .slider {
-	background-color: #2196f3;
+	background-color: var(--color-interactive);
 }
 
 .header-container .header-language-btn .switch input:focus + .slider {
-	box-shadow: 0 0 1px #2196f3;
+	box-shadow: 0 0 1px var(--color-interactive);
 }
 
 .header-container .header-language-btn .switch input:checked + .slider:before {
@@ -178,7 +178,7 @@
 	.hover-list-line {
 	display: block;
 	width: 100%;
-	background-color: #2daca8;
+	background-color: var(--color-accent);
 }
 
 @media screen and (max-width: 640px) {

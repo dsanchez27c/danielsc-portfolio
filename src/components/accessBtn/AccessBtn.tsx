@@ -1,13 +1,5 @@
 import { Icons } from "../icons/Icons";
-
-interface AccesBtnType {
-  classBtn: string;
-  href: string;
-  nameIcon?: "linkedin" | "github";
-  sizeIcon?: string;
-  colorIcon?: string;
-  textBtn?: string;
-}
+import { AccessBtnType } from "src/interfaces/Interfaces";
 
 function AccessBtn({
   classBtn,
@@ -16,16 +8,20 @@ function AccessBtn({
   sizeIcon,
   colorIcon,
   textBtn,
-}: AccesBtnType) {
+}: AccessBtnType) {
   return (
-    <button aria-label={nameIcon} className={classBtn}>
-      <a href={href} aria-label={nameIcon} target="_blank">
-        {nameIcon && colorIcon && sizeIcon && (
-          <Icons name={nameIcon} size={sizeIcon} color={colorIcon} />
-        )}
-        {textBtn && <span>{textBtn}</span>}
-      </a>
-    </button>
+    <a
+      aria-label={nameIcon}
+      className={classBtn}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {nameIcon && colorIcon && sizeIcon && (
+        <Icons name={nameIcon} size={sizeIcon} color={colorIcon} />
+      )}
+      {textBtn && <span>{textBtn}</span>}
+    </a>
   );
 }
 

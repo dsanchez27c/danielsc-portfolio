@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 
-/// interfaz para datos de experiencias
 export interface ExperiencesInt {
 	title: string;
 	startDate: string;
@@ -26,7 +25,7 @@ export interface MyTitleInterface {
 	intro: string;
 	openToWork: boolean;
 	openToWorkText: string;
-	image?: any;
+	image?: string;
 	downloadText: string;
 }
 
@@ -35,8 +34,17 @@ export interface TitleInterface {
 	icon: ReactNode;
 }
 
-export interface IconIntercface {
+export interface IconInterface {
 	color?: string;
 	name: string;
 	size: string;
+}
+
+export interface AccessBtnType {
+	classBtn: string;
+	href: string;
+	nameIcon?: string;
+	sizeIcon?: string;
+	colorIcon?: string;
+	textBtn?: string;
 }

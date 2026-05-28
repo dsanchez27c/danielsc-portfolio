@@ -19,7 +19,7 @@ function MyTitle({
 		<section className="my-title-main">
 			<section className="about-container">
 				<section className="user-basic-info">
-					<h2 className="name-dev">{name}</h2>
+					<h1 className="name-dev">{name}</h1>
 					<p className="job-dev">
 						{job}{' '}
 						{openToWork ? (

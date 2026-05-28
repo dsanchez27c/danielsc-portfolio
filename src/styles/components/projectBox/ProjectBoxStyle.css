@@ -18,6 +18,29 @@
 	margin-top: 0.5rem;
 }
 
+.project-article .project-links {
+	display: flex;
+	gap: 0.8rem;
+	margin-bottom: 1.4rem;
+}
+
+.project-article .project-links .project-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 6px;
+	padding: 0.25rem 0.75rem;
+	font-size: 14px;
+	transition: background-color 0.2s ease-out;
+}
+
+.project-article .project-links .project-link:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
 .project-article .project-img {
 	width: 100%;
 	border-radius: 8px;

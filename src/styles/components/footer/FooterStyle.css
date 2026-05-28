@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
 	padding: 1.4rem 0 0.6rem;
-	background-color: #051a37;
+	background-color: var(--color-footer-bg);
 
 	display: flex;
 	flex-direction: column;

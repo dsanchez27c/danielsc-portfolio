@@ -6,8 +6,8 @@ import { useTranslation } from 'react-i18next';
 function ProjectBox({
 	title,
 	description,
-	// link,
-	// github,
+	link,
+	github,
 	image,
 	tags,
 }: ProjectsInt) {
@@ -32,10 +32,26 @@ function ProjectBox({
 					);
 				})}
 			</ul>
+			{(link || github) && (
+				<div className="project-links">
+					{link && (
+						<a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
+							<Icons name="code" size="16" color="#fff" />
+							<span>Demo</span>
+						</a>
+					)}
+					{github && (
+						<a href={github} target="_blank" rel="noopener noreferrer" className="project-link">
+							<Icons name="github" size="16" color="#adbac7" />
+							<span>GitHub</span>
+						</a>
+					)}
+				</div>
+			)}
 			<img
 				className="project-img"
 				src={image}
-				alt={`Captura de pantalla del proyecto ${image}`}
+				alt={`${t(title)} — preview`}
 			/>
 		</article>
 	);

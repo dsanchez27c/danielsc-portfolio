@@ -1,4 +1,9 @@
 :root {
+  --color-accent: #2daca8;
+  --color-interactive: #2196f3;
+  --color-badge: #00ffff98;
+  --color-footer-bg: #051a37;
+
   font-family: "Nunito", sans-serif;
   line-height: 1.5;
   font-weight: 400;

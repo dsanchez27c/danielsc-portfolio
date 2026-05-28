@@ -9,7 +9,7 @@ import { ExperiencesInt } from 'src/interfaces/Interfaces';
 
 function Experience() {
 	const [t] = useTranslation('global');
-	let idExperience = t('header.experience').toLowerCase();
+	const idExperience = t('header.experience').toLowerCase();
 
 	const Experiences: ExperiencesInt[] = [
 		{
